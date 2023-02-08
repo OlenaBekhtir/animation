@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+.container {
+    perspective: 500px;
+    height: 100vh;
+}
+
+.text {
+    color: #edc80d;
+    font-size: 60px;
+    line-height: 90px;
+    text-shadow: 2px 2px 5px #ff6f00;
+    animation: text-animation 30s ease infinite;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 72px;
+    text-align: center;
+    margin-bottom: 72px;
+    line-height: 144px;
+}
+
+.main-part {
+    text-align: justify;
+    margin-bottom: 72px;
+    font-weight: 700;
+    width: 100%;
+}
+
+@keyframes text-animation{
+    0%{
+        margin-top: 150px; 
+        transform: scale3d(1.5, 1.5, 3) rotateX(45deg) translate3d(0, 0, 150px);
+        width: 100%; 
+           
+    }
+    100%{
+        margin-top: -400px;
+        transform: scale3d(2.5, 0.5, 2) rotateX(45deg) translate3d(0, 0, -1700px); 
+        width: 100%;
+    }
+}
